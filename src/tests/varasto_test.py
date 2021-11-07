@@ -10,6 +10,7 @@ class TestVarasto(unittest.TestCase):
         uusi_varasto = Varasto(-6)
         vastaus = uusi_varasto.tilavuus
         self.assertEqual(vastaus, 0) # rikottu testi, oikea vastaus on nolla, väärässä 16
+        # tehtävä 11: lisätty tämä kommentti
 
     def test_konstruktori_luo_tyhjan_varaston(self):
         # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertAlmostEqual
