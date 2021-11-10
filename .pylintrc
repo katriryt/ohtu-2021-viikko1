@@ -1,6 +1,8 @@
 [MASTER]
 
 ignore=tests,index.py
+#Limit level of code complexity. 
+load-plugins=pylint.extensions.mccabe
 
 [MESSAGE CONTROL]
 
@@ -89,7 +91,16 @@ disable=print-statement,
         no-self-use
 
 [FORMAT]
+#Maximum number of characters on a single line
+max-line-length=110
 
 [REFACTORING]
+#Maximum number of nested blocks for function / method body
+max-nested-blocks=2
 
 [DESIGN]
+#Maximum number of statements in function/method body
+max-statements=20
+
+#McCabe complexity cyclomatic threshold
+max-complexity=3
